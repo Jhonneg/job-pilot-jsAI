@@ -24,3 +24,9 @@ After building any component — update this file with the component name, file 
 - Supporting files: [components/homepage/HomepageHeader.tsx](components/homepage/HomepageHeader.tsx), [components/homepage/HomepageHero.tsx](components/homepage/HomepageHero.tsx), [components/homepage/HomepagePreview.tsx](components/homepage/HomepagePreview.tsx), [components/homepage/HomepageFeatureSplit.tsx](components/homepage/HomepageFeatureSplit.tsx), [components/homepage/HomepageConfidenceSplit.tsx](components/homepage/HomepageConfidenceSplit.tsx), [components/homepage/HomepageTestimonial.tsx](components/homepage/HomepageTestimonial.tsx), [components/homepage/HomepageCta.tsx](components/homepage/HomepageCta.tsx), [components/homepage/HomepageFooter.tsx](components/homepage/HomepageFooter.tsx), [components/homepage/HomepageButton.tsx](components/homepage/HomepageButton.tsx)
 - Shared content: [components/homepage/homepage-content.tsx](components/homepage/homepage-content.tsx)
 - Patterns: centered hero copy, dual-column content bands, white cards on `bg-background`, gradient accent glow, public image embeds from `public/images/`
+
+### Auth login shell
+
+- File: [app/login/page.tsx](app/login/page.tsx)
+- Supporting files: [app/actions/auth.ts](app/actions/auth.ts)
+- Patterns: two-column auth card, left-side marketing panel with subtle gradient wash, right-side provider buttons stacked in a narrow form column, inline oauth failure banner, route-safe redirect back to `/login` for recoverable auth errors

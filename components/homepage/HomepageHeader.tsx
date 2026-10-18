@@ -4,7 +4,11 @@ import Link from "next/link";
 import { HomepageButton } from "./HomepageButton";
 import { navItems } from "./homepage-content";
 
-export function HomepageHeader() {
+type HomepageHeaderProps = {
+  startHref: string;
+};
+
+export function HomepageHeader({ startHref }: HomepageHeaderProps) {
   return (
     <header className="border-b border-border bg-surface">
       <div className="flex h-16 items-center justify-between gap-6 px-6 md:px-8 lg:px-10">
@@ -38,7 +42,7 @@ export function HomepageHeader() {
           ))}
         </nav>
 
-        <HomepageButton href="/login">Start for free</HomepageButton>
+        <HomepageButton href={startHref}>Start for free</HomepageButton>
       </div>
     </header>
   );

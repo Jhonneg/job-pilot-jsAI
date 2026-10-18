@@ -1,6 +1,10 @@
 import { HomepageButton } from "./HomepageButton";
 
-export function HomepageHero() {
+type HomepageHeroProps = {
+  startHref: string;
+};
+
+export function HomepageHero({ startHref }: HomepageHeroProps) {
   return (
     <section className="relative overflow-hidden rounded-none border border-border bg-surface px-5 py-10 md:px-8 md:py-14 lg:px-12">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -20,13 +24,13 @@ export function HomepageHero() {
           companies, and gives you everything you need to stand out.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <HomepageButton href="/login">
+          <HomepageButton href={startHref}>
             <span className="inline-flex items-center gap-2">
               Get Started
               <span aria-hidden="true">▶</span>
             </span>
           </HomepageButton>
-          <HomepageButton href="/login" variant="secondary">
+          <HomepageButton href={startHref} variant="secondary">
             Find Your First Match
           </HomepageButton>
         </div>

@@ -60,3 +60,6 @@ _Add decisions here as they are made during implementation._
 ## Notes
 
 _Add notes here as the build progresses — workarounds, patterns, anything that differs from the context files._
+
+- Auth foundation started with InsForge SSR helpers, login page, OAuth callback/refresh routes, proxy protection, and protected route scaffolds.
+- Login page now handles OAuth initialization failures by redirecting back to `/login?error=oauth_failed` and rendering a recoverable banner instead of throwing.

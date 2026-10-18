@@ -1,6 +1,10 @@
 import { HomepageButton } from "./HomepageButton";
 
-export function HomepageCta() {
+type HomepageCtaProps = {
+  startHref: string;
+};
+
+export function HomepageCta({ startHref }: HomepageCtaProps) {
   return (
     <section className="relative overflow-hidden border-y border-border bg-surface px-6 py-12 md:px-10 lg:px-12 lg:py-16">
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -18,13 +22,13 @@ export function HomepageCta() {
           minutes.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <HomepageButton href="/login">
+          <HomepageButton href={startHref}>
             <span className="inline-flex items-center gap-2">
               Get Started
               <span aria-hidden="true">▶</span>
             </span>
           </HomepageButton>
-          <HomepageButton href="/login" variant="secondary">
+          <HomepageButton href={startHref} variant="secondary">
             Find Your First Match
           </HomepageButton>
         </div>
