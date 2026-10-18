@@ -18,4 +18,9 @@ After building any component — update this file with the component name, file 
 
 ## Components
 
-_Empty. Components will be added here as they are built._
+### Homepage composition
+
+- File: [components/homepage/Homepage.tsx](components/homepage/Homepage.tsx)
+- Supporting files: [components/homepage/HomepageHeader.tsx](components/homepage/HomepageHeader.tsx), [components/homepage/HomepageHero.tsx](components/homepage/HomepageHero.tsx), [components/homepage/HomepagePreview.tsx](components/homepage/HomepagePreview.tsx), [components/homepage/HomepageFeatureSplit.tsx](components/homepage/HomepageFeatureSplit.tsx), [components/homepage/HomepageConfidenceSplit.tsx](components/homepage/HomepageConfidenceSplit.tsx), [components/homepage/HomepageTestimonial.tsx](components/homepage/HomepageTestimonial.tsx), [components/homepage/HomepageCta.tsx](components/homepage/HomepageCta.tsx), [components/homepage/HomepageFooter.tsx](components/homepage/HomepageFooter.tsx), [components/homepage/HomepageButton.tsx](components/homepage/HomepageButton.tsx)
+- Shared content: [components/homepage/homepage-content.tsx](components/homepage/homepage-content.tsx)
+- Patterns: centered hero copy, dual-column content bands, white cards on `bg-background`, gradient accent glow, public image embeds from `public/images/`
