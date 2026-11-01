@@ -30,3 +30,8 @@ After building any component — update this file with the component name, file 
 - File: [app/login/page.tsx](app/login/page.tsx)
 - Supporting files: [app/actions/auth.ts](app/actions/auth.ts)
 - Patterns: two-column auth card, left-side marketing panel with subtle gradient wash, right-side provider buttons stacked in a narrow form column, inline oauth failure banner, route-safe redirect back to `/login` for recoverable auth errors
+
+### Analytics page tracker
+
+- File: [components/analytics/PageViewTracker.tsx](components/analytics/PageViewTracker.tsx)
+- Patterns: invisible client component mounted in the root layout; captures `page_viewed` with the current pathname after navigation.

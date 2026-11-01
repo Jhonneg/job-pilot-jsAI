@@ -1,16 +1,22 @@
+"use client";
+
 import Link from "next/link";
 
 import type { ReactNode } from "react";
 
+import { capturePostHogEvent } from "@/lib/posthog-client";
+
 type HomepageButtonProps = {
   href: string;
   children: ReactNode;
+  ctaLocation: "header" | "hero" | "closing";
   variant?: "primary" | "secondary";
 };
 
 export function HomepageButton({
   href,
   children,
+  ctaLocation,
   variant = "primary",
 }: HomepageButtonProps) {
   const base =
@@ -21,7 +27,16 @@ export function HomepageButton({
       : "border border-border bg-surface text-text-primary shadow-sm hover:bg-surface-secondary";
 
   return (
-    <Link className={`${base} ${styles}`} href={href}>
+    <Link
+      className={`${base} ${styles}`}
+      href={href}
+      onClick={() => {
+        capturePostHogEvent("marketing_cta_clicked", {
+          cta_location: ctaLocation,
+          destination: href,
+        });
+      }}
+    >
       {children}
     </Link>
   );

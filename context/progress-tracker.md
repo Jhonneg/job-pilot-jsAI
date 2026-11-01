@@ -9,9 +9,9 @@ Update this file after every completed feature. Any AI agent reading this should
 **Phase:**
 1 - Foundation
 **Last completed:**
-01 Homepage
+03 PostHog Initialization
 **Next:**
-02 Auth
+04 Database Schema
 
 ---
 
@@ -20,8 +20,8 @@ Update this file after every completed feature. Any AI agent reading this should
 ### Phase 1 — Foundation
 
 - [x] 01 Homepage
-- [ ] 02 Auth
-- [ ] 03 PostHog Initialization
+- [x] 02 Auth
+- [x] 03 PostHog Initialization
 - [ ] 04 Database Schema
 
 ### Phase 2 — Profile Page
@@ -63,3 +63,4 @@ _Add notes here as the build progresses — workarounds, patterns, anything that
 
 - Auth foundation started with InsForge SSR helpers, login page, OAuth callback/refresh routes, proxy protection, and protected route scaffolds.
 - Login page now handles OAuth initialization failures by redirecting back to `/login?error=oauth_failed` and rendering a recoverable banner instead of throwing.
+- PostHog now captures `page_viewed`, `marketing_cta_clicked` with destination, `sign_in_started`, and `signed_out` from the current application surfaces.

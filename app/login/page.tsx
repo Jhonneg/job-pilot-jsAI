@@ -64,7 +64,10 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
               ) : null}
 
               <div className="mt-8 grid gap-3">
-                <form action={signInWithGoogle}>
+                <form
+                  action={signInWithGoogle}
+                  data-posthog-sign-in-provider="google"
+                >
                   <button
                     type="submit"
                     className="flex w-full items-center justify-center gap-2 rounded-md border border-border bg-surface px-4 py-3 text-sm font-medium text-text-primary shadow-sm transition-colors hover:bg-surface-secondary"
@@ -74,7 +77,10 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
                   </button>
                 </form>
 
-                <form action={signInWithGithub}>
+                <form
+                  action={signInWithGithub}
+                  data-posthog-sign-in-provider="github"
+                >
                   <button
                     type="submit"
                     className="flex w-full items-center justify-center gap-2 rounded-md border border-border bg-surface px-4 py-3 text-sm font-medium text-text-primary shadow-sm transition-colors hover:bg-surface-secondary"

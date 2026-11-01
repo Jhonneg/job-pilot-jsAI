@@ -42,7 +42,9 @@ export function HomepageHeader({ startHref }: HomepageHeaderProps) {
           ))}
         </nav>
 
-        <HomepageButton href={startHref}>Start for free</HomepageButton>
+        <HomepageButton href={startHref} ctaLocation="header">
+          Start for free
+        </HomepageButton>
       </div>
     </header>
   );

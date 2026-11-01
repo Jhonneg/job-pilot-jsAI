@@ -24,13 +24,17 @@ export function HomepageHero({ startHref }: HomepageHeroProps) {
           companies, and gives you everything you need to stand out.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <HomepageButton href={startHref}>
+          <HomepageButton href={startHref} ctaLocation="hero">
             <span className="inline-flex items-center gap-2">
               Get Started
               <span aria-hidden="true">▶</span>
             </span>
           </HomepageButton>
-          <HomepageButton href={startHref} variant="secondary">
+          <HomepageButton
+            href={startHref}
+            ctaLocation="hero"
+            variant="secondary"
+          >
             Find Your First Match
           </HomepageButton>
         </div>
