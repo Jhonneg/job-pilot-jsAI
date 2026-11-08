@@ -64,3 +64,4 @@ _Add notes here as the build progresses — workarounds, patterns, anything that
 - Auth foundation started with InsForge SSR helpers, login page, OAuth callback/refresh routes, proxy protection, and protected route scaffolds.
 - Login page now handles OAuth initialization failures by redirecting back to `/login?error=oauth_failed` and rendering a recoverable banner instead of throwing.
 - PostHog now captures `page_viewed`, `marketing_cta_clicked` with destination, `sign_in_started`, and `signed_out` from the current application surfaces.
+- PostHog initialization is managed by the PostHog Wizard in `instrumentation-client.ts`; application code should add events through the shared capture helper without creating a second client initialization.

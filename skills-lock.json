@@ -2,10 +2,10 @@
   "version": 1,
   "skills": {
     "architect": {
-      "source": "Javascript-Mastery-Pro/skills",
+      "source": "JavaScript-Mastery-Pro/jsm-agent-skill",
       "sourceType": "github",
       "skillPath": "skills/architect/SKILL.md",
-      "computedHash": "ff57c65a06ca4047420113d1eaa18e5002bc657224688b9350a1f06d77204327"
+      "computedHash": "62908472db7bd81004ab9abe0810bac166cee1b6e08aaf5793175bb90c4916f7"
     },
     "audit": {
       "source": "Javascript-Mastery-Pro/skills",
@@ -36,6 +36,30 @@
       "sourceType": "github",
       "skillPath": "skills/document/SKILL.md",
       "computedHash": "90933443f204d2ed29c84730be87b7b5470f6819fccde6129aedad1df517fb92"
+    },
+    "imprint": {
+      "source": "JavaScript-Mastery-Pro/jsm-agent-skill",
+      "sourceType": "github",
+      "skillPath": "skills/imprint/SKILL.md",
+      "computedHash": "1690b7e280208914a8c950d414d47a7ccdc0278aacf4e04b127830db696c4f01"
+    },
+    "recover": {
+      "source": "JavaScript-Mastery-Pro/jsm-agent-skill",
+      "sourceType": "github",
+      "skillPath": "skills/recover/SKILL.md",
+      "computedHash": "3eea3552368d8131362187e3dcce7d3c8477dbbc986fec2dc34b711f37144e33"
+    },
+    "remember": {
+      "source": "JavaScript-Mastery-Pro/jsm-agent-skill",
+      "sourceType": "github",
+      "skillPath": "skills/remember/SKILL.md",
+      "computedHash": "6669b9ef52142b5128612e6c32b0d238b5b843beea7bf196653004d746d6a1d3"
+    },
+    "review": {
+      "source": "JavaScript-Mastery-Pro/jsm-agent-skill",
+      "sourceType": "github",
+      "skillPath": "skills/review/SKILL.md",
+      "computedHash": "1b0bfd542962466b53935c1a992542564d0216d508610645ee9a5432f937c112"
     },
     "scope": {
       "source": "Javascript-Mastery-Pro/skills",
